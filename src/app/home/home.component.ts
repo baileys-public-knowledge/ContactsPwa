@@ -21,18 +21,6 @@ export class HomeComponent implements OnInit {
 
   constructor(private router: Router, public contactQuery: ContactQuery, public contactService: ContactService) 
   {
-    /* this.contactService.add(createContact({FirstName:"💖💢💢💢💢💢", LastName: "Miller"}))
-    this.contactService.add(createContact({FirstName:"Andrew", LastName: "Miller"}))
-    this.contactService.add(createContact({FirstName:"Zack", LastName: "Miller"}))
-    this.contactService.add(createContact({FirstName:"Morgan", LastName: "Miller"}))
-
-    this.contactService.add(createContact({FirstName:"Bob", LastName: "Miller"}))
-    
-    this.contactService.add(createContact({FirstName:"😜", LastName: "Miller"}))
-
-    this.contactService.add(createContact({FirstName:"👍", LastName: "Miller"}))
-    this.contactService.add(createContact({FirstName:"😍", LastName: "Miller"})) */
-
     this.ContactGrouping$ = this.GetAll()
       .pipe(
         map(grouping => 
@@ -60,10 +48,6 @@ export class HomeComponent implements OnInit {
             return groups.Groups;
           })
         );
-
-
-
-        this.ContactGrouping$.subscribe(x=>console.log(x))
 
   }
 
@@ -118,6 +102,19 @@ export class HomeComponent implements OnInit {
 
   AddContact()
   {
+    // Populate dummy data
+    this.contactService.add(createContact({FirstName:"💖💢💢💢💢💢", LastName: "Miller"}))
+    this.contactService.add(createContact({FirstName:"Andrew", LastName: "Miller"}))
+    this.contactService.add(createContact({FirstName:"Zack", LastName: "Miller"}))
+    this.contactService.add(createContact({FirstName:"Morgan", LastName: "Miller"}))
+
+    this.contactService.add(createContact({FirstName:"Bob", LastName: "Miller"}))
+    
+    this.contactService.add(createContact({FirstName:"😜", LastName: "Miller"}))
+
+    this.contactService.add(createContact({FirstName:"👍", LastName: "Miller"}))
+    this.contactService.add(createContact({FirstName:"😍", LastName: "Miller"}))
+
     // Navigate to add route
     //this.router.navigate(['add']);
   }
