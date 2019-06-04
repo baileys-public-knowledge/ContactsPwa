@@ -2,6 +2,10 @@ import { ID, guid } from '@datorama/akita';
 
 export interface Contact {
   id: ID;
+  FirstName: string;
+  LastName: string;
+  Email: string;
+  CreatedAt: Date;
 }
 
 /**
@@ -10,6 +14,7 @@ export interface Contact {
 export function createContact(params: Partial<Contact>) {
   return {
     ...params,
-    id: guid()
+    id: guid(),
+    CreatedAt: new Date()
   } as Contact;
 }
