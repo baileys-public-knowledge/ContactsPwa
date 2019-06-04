@@ -2,13 +2,15 @@ import { Injectable } from '@angular/core';
 import { ID } from '@datorama/akita';
 import { HttpClient } from '@angular/common/http';
 import { ContactStore } from '../State/Contacts/contact.store';
-import { Contact } from '../State/Contacts/contact.model';
+import { Contact, createContact } from '../State/Contacts/contact.model';
 
 @Injectable({ providedIn: 'root' })
 export class ContactService {
 
-  constructor(private contactStore: ContactStore,
-              private http: HttpClient) {
+  constructor(private contactStore: ContactStore, private http: HttpClient) 
+  {
+    // Add some dumb data
+    
   }
 
   /* get() {
@@ -27,8 +29,7 @@ export class ContactService {
     this.contactStore.remove(id);
   }
 
-  clearAll()
-  {
+  clearAll() {
     this.contactStore.reset();
   }
 }

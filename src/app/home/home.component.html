@@ -3,7 +3,22 @@
   <app-search-bar></app-search-bar>
 
   <!-- Display Contacts  -->
+  <mat-nav-list class="m1-left m1-right">
 
+
+    <ng-container *ngFor="let LetterGroup of (ContactGrouping$ | async)">
+        <h3 matSubheader>{{LetterGroup.Letter}}</h3>
+
+        <!-- ngFor Each Contact in Group -->
+        <ng-container *ngFor="let Contact of LetterGroup.Contacts">
+            <mat-list-item (click)="GoTo('Andrew LastName')">
+                <img matListAvatar src='https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShaggyMullet&accessoriesType=Prescription02&hairColor=Red&facialHairType=BeardMagestic&facialHairColor=Blonde&clotheType=ShirtVNeck&clotheColor=Gray01&eyeType=Close&eyebrowType=RaisedExcited&mouthType=Concerned&skinColor=Brown' alt="Test Icon">
+               <h4 matLine>{{Contact.FirstName}} {{Contact.LastName}}</h4>
+            </mat-list-item>
+        </ng-container>
+        
+    </ng-container>
+   </mat-nav-list>
 
   <!-- Add Button? -->
   <app-add-button (click)="AddContact()"></app-add-button>
