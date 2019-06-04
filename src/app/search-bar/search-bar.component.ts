@@ -11,8 +11,8 @@ import { filter, debounceTime, map, distinctUntilChanged, tap } from 'rxjs/opera
 })
 export class SearchBarComponent implements OnInit {
 
-  private searchValue: string = '';
-  private hasSearchValueLength: boolean = this.searchValue.length != 0;
+  public searchValue: string = '';
+  public hasSearchValueLength: boolean = this.searchValue.length != 0;
 
   private _SearchDebounce$: Subject<String> = new Subject<String>();
 
