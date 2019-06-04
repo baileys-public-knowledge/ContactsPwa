@@ -17,6 +17,21 @@ export class ContactService {
     this.http.get('https://akita.com').subscribe((entities) => this.contactStore.set(entities));
   } */
 
+  ClearSearchTerm()
+  {
+    this.contactStore.clearSearchTerm();
+  }
+
+  setContactFilterTerm(term: string)
+  {
+    this.contactStore.update({
+      ui:
+      {
+        contactFilterTerm: term
+      }
+    });
+  }
+
   add(contact: Contact) {
     this.contactStore.add(contact);
   }
