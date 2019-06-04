@@ -21,16 +21,17 @@ export class HomeComponent implements OnInit {
 
   constructor(private router: Router, public contactQuery: ContactQuery, public contactService: ContactService) 
   {
-    /* this.contactService.add(createContact({FirstName:"Bailey", LastName: "Miller"}))
+    /* this.contactService.add(createContact({FirstName:"💖💢💢💢💢💢", LastName: "Miller"}))
     this.contactService.add(createContact({FirstName:"Andrew", LastName: "Miller"}))
     this.contactService.add(createContact({FirstName:"Zack", LastName: "Miller"}))
     this.contactService.add(createContact({FirstName:"Morgan", LastName: "Miller"}))
 
     this.contactService.add(createContact({FirstName:"Bob", LastName: "Miller"}))
-    this.contactService.add(createContact({FirstName:"😍", LastName: "Miller"}))
-    this.contactService.add(createContact({FirstName:"Bailey", LastName: "Miller"}))
+    
+    this.contactService.add(createContact({FirstName:"😜", LastName: "Miller"}))
 
-    this.contactService.add(createContact({FirstName:"Bailey", LastName: "Miller"})) */
+    this.contactService.add(createContact({FirstName:"👍", LastName: "Miller"}))
+    this.contactService.add(createContact({FirstName:"😍", LastName: "Miller"})) */
 
     this.ContactGrouping$ = this.GetAll()
       .pipe(
@@ -47,7 +48,7 @@ export class HomeComponent implements OnInit {
             for (let index = 0; index < groups.Contacts.length; index++) {
               const _contact = groups.Contacts[index];
               
-              let _letter = _contact.FirstName[0];
+              let _letter = this.GetFirstLetterFromStringOrEmoji(_contact.FirstName);
 
               let Grouping = groups.Groups.filter(_grp => _grp.Letter === _letter)[0];
               Grouping.Contacts.push(_contact);
@@ -66,11 +67,34 @@ export class HomeComponent implements OnInit {
 
   }
 
+  GetFirstLetterFromStringOrEmoji(data: string)
+  {
+
+    return data.charAt(0);
+
+
+    // TODO - See if detecting Emoji as first character is even worth it
+    if(data.length >= 2)
+    {
+      if(data.codePointAt(0) >= 128512)
+      {
+        return data;
+      }else
+      {
+        return data.charAt(0);
+      }
+    }else
+    {
+      return data.charAt(0);
+    }
+  }
 
   GetContactGrouping(data: Contact[])
   {
     return data.map((Contact: any)=>{
-      return Contact.FirstName[0];
+      let _s = Contact.FirstName as string;
+      
+      return this.GetFirstLetterFromStringOrEmoji(_s);
     }).filter(this.GetDistinct).sort().map(g=> {
       return {
         Letter: g,
