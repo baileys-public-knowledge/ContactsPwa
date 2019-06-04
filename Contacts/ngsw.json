@@ -1,22 +1,22 @@
 {
   "configVersion": 1,
-  "timestamp": 1559687031357,
-  "index": "/Contact/index.html",
+  "timestamp": 1559687135730,
+  "index": "/ContactsPwa/index.html",
   "assetGroups": [
     {
       "name": "app",
       "installMode": "prefetch",
       "updateMode": "prefetch",
       "urls": [
-        "/Contact/favicon.ico",
-        "/Contact/index.html",
-        "/Contact/main-es2015.18b5ca3e176fc8e99b26.js",
-        "/Contact/main-es5.c46b75826f17bd6046b8.js",
-        "/Contact/polyfills-es2015.e954256595c973372414.js",
-        "/Contact/polyfills-es5.405730e5ac8f727bd7d7.js",
-        "/Contact/runtime-es2015.858f8dd898b75fe86926.js",
-        "/Contact/runtime-es5.741402d1d47331ce975c.js",
-        "/Contact/styles.74c3b8231c3922b3d35f.css"
+        "/ContactsPwa/favicon.ico",
+        "/ContactsPwa/index.html",
+        "/ContactsPwa/main-es2015.18b5ca3e176fc8e99b26.js",
+        "/ContactsPwa/main-es5.c46b75826f17bd6046b8.js",
+        "/ContactsPwa/polyfills-es2015.e954256595c973372414.js",
+        "/ContactsPwa/polyfills-es5.405730e5ac8f727bd7d7.js",
+        "/ContactsPwa/runtime-es2015.858f8dd898b75fe86926.js",
+        "/ContactsPwa/runtime-es5.741402d1d47331ce975c.js",
+        "/ContactsPwa/styles.74c3b8231c3922b3d35f.css"
       ],
       "patterns": []
     },
@@ -25,14 +25,14 @@
       "installMode": "lazy",
       "updateMode": "prefetch",
       "urls": [
-        "/Contact/assets/icons/icon-128x128.png",
-        "/Contact/assets/icons/icon-144x144.png",
-        "/Contact/assets/icons/icon-152x152.png",
-        "/Contact/assets/icons/icon-192x192.png",
-        "/Contact/assets/icons/icon-384x384.png",
-        "/Contact/assets/icons/icon-512x512.png",
-        "/Contact/assets/icons/icon-72x72.png",
-        "/Contact/assets/icons/icon-96x96.png"
+        "/ContactsPwa/assets/icons/icon-128x128.png",
+        "/ContactsPwa/assets/icons/icon-144x144.png",
+        "/ContactsPwa/assets/icons/icon-152x152.png",
+        "/ContactsPwa/assets/icons/icon-192x192.png",
+        "/ContactsPwa/assets/icons/icon-384x384.png",
+        "/ContactsPwa/assets/icons/icon-512x512.png",
+        "/ContactsPwa/assets/icons/icon-72x72.png",
+        "/ContactsPwa/assets/icons/icon-96x96.png"
       ],
       "patterns": [
         "https:\\/\\/avataaars\\.io\\/.*"
@@ -41,23 +41,23 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/Contact/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
-    "/Contact/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
-    "/Contact/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
-    "/Contact/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
-    "/Contact/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
-    "/Contact/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
-    "/Contact/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
-    "/Contact/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
-    "/Contact/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "/Contact/index.html": "88bf5d1d617e34866e54d410c49334237779c86f",
-    "/Contact/main-es2015.18b5ca3e176fc8e99b26.js": "42227ed62fc79e9dc5c8e4c1abc6df14c6d84d83",
-    "/Contact/main-es5.c46b75826f17bd6046b8.js": "efa76ac2ad311e049127b21afee69dd68c5eea15",
-    "/Contact/polyfills-es2015.e954256595c973372414.js": "ae2d1da695b0816436f21ff43f857a42b11a4e17",
-    "/Contact/polyfills-es5.405730e5ac8f727bd7d7.js": "042d7744ef82a64c73310f1db253736731a03950",
-    "/Contact/runtime-es2015.858f8dd898b75fe86926.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
-    "/Contact/runtime-es5.741402d1d47331ce975c.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
-    "/Contact/styles.74c3b8231c3922b3d35f.css": "3bc7ad1bb609dce30b7a72d6f16b6a1f19b0fee0"
+    "/ContactsPwa/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/ContactsPwa/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/ContactsPwa/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/ContactsPwa/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/ContactsPwa/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/ContactsPwa/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/ContactsPwa/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/ContactsPwa/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/ContactsPwa/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
+    "/ContactsPwa/index.html": "dbe71bc5559bbd7e21417cdf738010a40b250b85",
+    "/ContactsPwa/main-es2015.18b5ca3e176fc8e99b26.js": "42227ed62fc79e9dc5c8e4c1abc6df14c6d84d83",
+    "/ContactsPwa/main-es5.c46b75826f17bd6046b8.js": "efa76ac2ad311e049127b21afee69dd68c5eea15",
+    "/ContactsPwa/polyfills-es2015.e954256595c973372414.js": "ae2d1da695b0816436f21ff43f857a42b11a4e17",
+    "/ContactsPwa/polyfills-es5.405730e5ac8f727bd7d7.js": "042d7744ef82a64c73310f1db253736731a03950",
+    "/ContactsPwa/runtime-es2015.858f8dd898b75fe86926.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
+    "/ContactsPwa/runtime-es5.741402d1d47331ce975c.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
+    "/ContactsPwa/styles.74c3b8231c3922b3d35f.css": "3bc7ad1bb609dce30b7a72d6f16b6a1f19b0fee0"
   },
   "navigationUrls": [
     {
