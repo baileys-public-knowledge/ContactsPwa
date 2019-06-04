@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { AkitaNgDevtools } from '@datorama/akita-ngdevtools';
 import { AkitaNgRouterStoreModule } from '@datorama/akita-ng-router-store';
 import { environment } from '../environments/environment';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { environment } from '../environments/environment';
     AppRoutingModule,
     environment.production ?
         [] :
-        [ AkitaNgDevtools.forRoot(), AkitaNgRouterStoreModule.forRoot() ]
+        [ AkitaNgDevtools.forRoot(), AkitaNgRouterStoreModule.forRoot() ],
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
