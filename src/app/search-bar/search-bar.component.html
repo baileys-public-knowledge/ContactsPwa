@@ -3,8 +3,7 @@
     <mat-label>Search Contacts</mat-label>
     <mat-icon matPrefix>search</mat-icon>
     <input matInput placeholder="Enter Name" (keyup)="KeyUpEvent($event)" [(ngModel)]="searchValue">
-    <button mat-icon-button matSuffix (click)="ClearSearchTerm()" [disableRipple]="true" [attr.aria-label]="'Clear Search'"
-      [attr.aria-pressed]="hide">
+    <button mat-icon-button matSuffix (click)="ClearSearchTerm()" [disableRipple]="true" [attr.aria-label]="'Clear Search'">
       <mat-icon *ngIf="hasSearchValueLength">close</mat-icon>
     </button>
   </mat-form-field>
