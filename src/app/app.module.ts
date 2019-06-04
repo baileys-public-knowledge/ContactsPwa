@@ -12,12 +12,14 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { MaterialModule } from './material.module';
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FloatAddButtonComponent } from './float-add-button/float-add-button.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainNavComponent,
-    HomeComponent
+    HomeComponent,
+    FloatAddButtonComponent
   ],
   imports: [
     BrowserModule,
