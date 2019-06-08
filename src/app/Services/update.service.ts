@@ -13,11 +13,6 @@ export class UpdateService {
 
     const appIsStable$ = appRef.isStable.pipe(first(isStable => isStable === true));
 
-
-    appIsStable$.subscribe(x=>{
-      this.updates.checkForUpdate();
-    });
-
     const everySixHours$ = interval(6 * 60 * 60 * 1000);
     const everySixHoursOnceAppIsStable$ = concat(appIsStable$, everySixHours$);
 
@@ -72,6 +67,6 @@ export class UpdateService {
 
    public UpdateApplication()
    {
-     document.location.reload();
+     this.updates.activateUpdate().then(()=>document.location.reload());
    }
 }
