@@ -19,8 +19,6 @@ export class UpdateService {
 
     everySixHoursOnceAppIsStable$.subscribe(x=> this.updates.checkForUpdate());
 
-
-
     this.updates.available.subscribe(event =>
       {
         this.DisplayUpdateNotification();
