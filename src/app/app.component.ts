@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { UpdateService } from './Services/update.service';
+import { ThemeQuery } from './State/theme/theme.query';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,7 @@ export class AppComponent {
   
 
 
-  constructor(private updateService: UpdateService)
+  constructor(private updateService: UpdateService, public themeQuery: ThemeQuery)
   {
     
   }

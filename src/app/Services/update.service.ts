@@ -46,6 +46,11 @@ export class UpdateService {
   }
 
 
+  public CanInstallPWA()
+  {
+    return this.deferredPrompt != null;
+  }
+
   private DisplayUpdateNotification() {
     // 
     var updateNotification = this._snackBar.open("An Update is available", "Update", {
