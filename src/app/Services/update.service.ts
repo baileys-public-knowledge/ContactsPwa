@@ -28,13 +28,18 @@ export class UpdateService {
     const everySixHours$ = interval(6 * 60 * 60 * 1000);
     const everySixHoursOnceAppIsStable$ = concat(appIsStable$, everySixHours$);
 
-    everySixHoursOnceAppIsStable$.subscribe(x=> this.updates.checkForUpdate());
+    everySixHoursOnceAppIsStable$.subscribe(x=> this.doUpdateCheck());
 
 
-    appIsStable$.subscribe(x=> this.updates.checkForUpdate());
+    appIsStable$.subscribe(x=> this.doUpdateCheck());
    }
 
 
+   private doUpdateCheck()
+   {
+     console.log("Checking for Updates.");
+    this.updates.checkForUpdate()
+   }
 
 
    private DisplayUpdateNotification()
