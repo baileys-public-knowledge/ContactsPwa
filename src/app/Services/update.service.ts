@@ -30,6 +30,8 @@ export class UpdateService {
 
     everySixHoursOnceAppIsStable$.subscribe(x=> this.updates.checkForUpdate());
 
+
+    appIsStable$.subscribe(x=> this.updates.checkForUpdate());
    }
 
 
