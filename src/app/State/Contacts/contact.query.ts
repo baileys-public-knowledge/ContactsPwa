@@ -22,7 +22,7 @@ export class ContactQuery extends QueryEntity<ContactState, Contact> {
             return this.selectAll();
           }else
           {
-            return this.selectAll({filterBy: entity => `${entity.FirstName} ${entity.LastName}`.includes(search)});
+            return this.selectAll({filterBy: entity => `${entity.FirstName} ${entity.LastName}`.toLowerCase().includes(search.toLowerCase())});
           }
         }
         )
