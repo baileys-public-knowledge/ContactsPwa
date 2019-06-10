@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1560208311225,
+  "timestamp": 1560208566185,
   "index": "/ContactsPwa/index.html",
   "assetGroups": [
     {
@@ -10,8 +10,8 @@
       "urls": [
         "/ContactsPwa/favicon.ico",
         "/ContactsPwa/index.html",
-        "/ContactsPwa/main-es2015.6064752caaab02176993.js",
-        "/ContactsPwa/main-es5.87671728f822583af3d7.js",
+        "/ContactsPwa/main-es2015.ab65bdfa7a17dc433f46.js",
+        "/ContactsPwa/main-es5.5b30ae699f5d57921006.js",
         "/ContactsPwa/polyfills-es2015.e954256595c973372414.js",
         "/ContactsPwa/polyfills-es5.405730e5ac8f727bd7d7.js",
         "/ContactsPwa/runtime-es2015.858f8dd898b75fe86926.js",
@@ -50,9 +50,9 @@
     "/ContactsPwa/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "/ContactsPwa/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "/ContactsPwa/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "/ContactsPwa/index.html": "cf7d3c99d05c3c72fac258a8cac9a88f73f79c89",
-    "/ContactsPwa/main-es2015.6064752caaab02176993.js": "0cf849d0cd37c77bf1c5b88c023d6e38718ba084",
-    "/ContactsPwa/main-es5.87671728f822583af3d7.js": "d1b8b9237ed8d8d9f0c2b914dde340f4b762b4f4",
+    "/ContactsPwa/index.html": "4e5b55b61072b6e4eb11f70e7192ad8fc666dac7",
+    "/ContactsPwa/main-es2015.ab65bdfa7a17dc433f46.js": "3799e9cbb7069908ef24c0bd9ee2c7617fdb5234",
+    "/ContactsPwa/main-es5.5b30ae699f5d57921006.js": "bae00cdcec215411fce2646f41830b050f63d93a",
     "/ContactsPwa/polyfills-es2015.e954256595c973372414.js": "ae2d1da695b0816436f21ff43f857a42b11a4e17",
     "/ContactsPwa/polyfills-es5.405730e5ac8f727bd7d7.js": "042d7744ef82a64c73310f1db253736731a03950",
     "/ContactsPwa/runtime-es2015.858f8dd898b75fe86926.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
