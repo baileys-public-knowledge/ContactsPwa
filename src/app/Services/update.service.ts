@@ -11,14 +11,6 @@ export class UpdateService {
 
   constructor(private appRef: ApplicationRef, private updates: SwUpdate, private _snackBar: MatSnackBar) {
 
-    const appIsStable$ = appRef.isStable.pipe(first(isStable => isStable === true));
-
-    const everySixHours$ = interval(6 * 60 * 60 * 1000);
-    const everySixHoursOnceAppIsStable$ = concat(appIsStable$, everySixHours$);
-
-
-    everySixHoursOnceAppIsStable$.subscribe(x=> this.updates.checkForUpdate());
-
     this.updates.available.subscribe(event =>
       {
         this.DisplayUpdateNotification();
@@ -29,6 +21,15 @@ export class UpdateService {
       {
         console.log(`Old was: ${event.previous} New is ${event.current}`);
       });
+
+
+    const appIsStable$ = appRef.isStable.pipe(first(isStable => isStable === true));
+
+    const everySixHours$ = interval(6 * 60 * 60 * 1000);
+    const everySixHoursOnceAppIsStable$ = concat(appIsStable$, everySixHours$);
+
+    everySixHoursOnceAppIsStable$.subscribe(x=> this.updates.checkForUpdate());
+
    }
 
 
