@@ -6,6 +6,7 @@ import { ContactQuery } from '../State/Contacts/contact.query';
 import { ContactService } from '../Services/contact.service';
 import { map } from 'rxjs/operators';
 import { ContactGroup } from '../Interfaces/Group.interface';
+import { UpdateService } from '../Services/update.service';
 
 @Component({
   selector: 'app-home',
@@ -19,7 +20,7 @@ export class HomeComponent implements OnInit {
   public ContactGrouping$: Observable<ContactGroup[]>;
 
 
-  constructor(private router: Router, public contactQuery: ContactQuery, public contactService: ContactService) 
+  constructor(private router: Router, public contactQuery: ContactQuery, public contactService: ContactService, public updateService: UpdateService) 
   {
     this.ContactGrouping$ = this.GetAll()
       .pipe(
